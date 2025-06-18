@@ -1,189 +1,283 @@
-body{
-    background-color: rgb(230, 250, 199);
-    margin: 3%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 2%;
-}
-
-#top-navigation{
+body {
+    background: #f6fbf7;
+    color: #16371a;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background: #fff;
+    padding: 18px 3vw;
     display: flex;
-    gap:70px;
-    background-color: rgba(29, 79, 29, 0.274);
-    padding: 5px;
-    justify-content: center;
-}
-
-#logo-name{
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(32,93,54,0.09);
+  }
+  .logo {
     display: flex;
-    gap: 2px;
-}
-
-#logo-name img{
-    width: 5vw;
-    border-radius:19px;
-}
-
-#navigation-content{
+    align-items: center;
+    gap: 8px;
+    font-size: 1.38rem;
+    font-weight: 700;
+    color: #22a643;
+  }
+  .logo img {
+    height: 80px;
+    margin-right: 8px;
+  }
+  .nav-links {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 5px;
-}
-
-#navigation-content a{
-    color: rgb(47, 45, 42);
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links a {
+    color: #16371a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .nav-links a.active,
+  .nav-links a:hover {
+    background: #22a643;
+    color: #fff;
+  }
+  .how-hero {
+    background: linear-gradient(220deg, #eafae3 60%, #bde5b1 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url('images/person\ farming.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0 180px 0;
+    text-align: left;
+    padding-left: 7vw;
+    position: relative;
+    
+  }
+  .how-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color:wheat;
+    margin-bottom: 4px;
+    text-shadow: 0 1px 8px rgba(32,93,54,0.08);
+  }
+  .how-hero p {
+    font-size: 1.16rem;
+    color: wheat;
+    max-width: 540px;
+    margin: 0;
+  }
+  .steps-section {
+    background: #fff;
+    border-radius: 22px;
+    margin: -42px auto 0 auto;
+    max-width: 1100px;
+    box-shadow: 0 6px 32px rgba(63,164,80,0.09);
+    padding: 40px 36px 34px 36px;
+    position: relative;
+    z-index: 10;
+    margin-top: 15px;
+  }
+  .steps-title {
+    text-align: center;
+    font-size: 2rem;
     font-weight: 800;
-    padding: 5px;
-}
-
-#navigation-content a:hover{
-    background-color: rgba(255, 166, 0, 0.554);
-    color: rgba(6, 96, 6, 0.274);
-    border-radius: 29px;
-}
-
-.working-features{
-    background-color: rgba(175, 217, 175, 0.708);
-    justify-items: center;
-    padding: 20px;
-}
-
-#first-features{
+    color: #16371a;
+    margin-bottom: 14px;
+  }
+  .steps-desc {
+    text-align: center;
+    color: #205d36;
+    font-size: 1.12rem;
+    margin-bottom: 32px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .steps-list {
     display: flex;
-    padding: 40px;
-    gap: 190px;
-}
-
-.feature-one{
-    background-color: beige;
-    padding: 15px;
-    width: 19vw;
-    height: 23vh;
-    justify-items: center;
-    border-radius: 10px;
-}
-
-.feature-one:hover{
-    background-color: rgba(255, 166, 0, 0.554);
-}
-
-
-.social-icons{
-    background-color: beige;
-    padding: 15px;
-    width: 19vw;
-    height: 23vh;
-    justify-items: center;
-    border-radius: 10px;
-}
-
-.social-icons img{
-    width: 5vw;
-    background-color: rgba(255, 166, 0, 0.554);
-    border-radius: 3px;
-    padding: 2px;
-
-}
-
-#the-footer{
-    background-color: rgba(255, 166, 0, 0.554);
-    padding: 15px;
-    justify-items: center;
-}
-
-
-@media (min-width: 768px){
-    body{
-    background-color: rgb(230, 250, 199);
-    margin: 3%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 2%;
-}
-
-#top-navigation{
-    display: flex;
-    gap:20px;
-    background-color: rgba(29, 79, 29, 0.274);
-    padding: 5px;
+    flex-wrap: wrap;
+    gap: 34px;
     justify-content: center;
-}
-
-#logo-name{
+    align-items: stretch;
+  }
+  .step-card {
+    background: #f6fbf7;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(22,55,26,0.07);
+    padding: 32px 22px 26px 22px;
+    min-width: 210px;
+    max-width: 260px;
+    flex: 1 1 210px;
     display: flex;
-    gap: 2px;
-}
-
-#logo-name img{
-    width: 5vw;
-    border-radius:19px;
-}
-
-#navigation-content{
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border-top: 5px solid #22a643;
+  }
+  .step-card:hover {
+    box-shadow: 0 8px 28px rgba(32,93,54,0.13);
+    transform: translateY(-4px) scale(1.03);
+  }
+  .step-icon {
+    background: #eafae3;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 18px;
     display: flex;
-    gap: 20px;
+    align-items: center;
     justify-content: center;
-    padding: 5px;
-}
-
-#navigation-content a{
-    color: rgb(47, 45, 42);
-    font-weight: 800;
-    padding: 5px;
-}
-
-#navigation-content a:hover{
-    background-color: rgba(255, 166, 0, 0.554);
-    color: rgba(6, 96, 6, 0.274);
-    border-radius: 29px;
-}
-
-.working-features{
-    background-color: rgba(175, 217, 175, 0.708);
-    justify-items: center;
-    padding: 20px;
-}
-
-#first-features{
+    font-size: 2.1rem;
+    color: #22a643;
+    box-shadow: 0 2px 10px rgba(32,93,54,0.08);
+  }
+  .step-title {
+    font-weight: 700;
+    color: #16371a;
+    font-size: 1.14rem;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  .step-desc {
+    color: #205d36;
+    font-size: 1.03rem;
+    text-align: center;
+  }
+  .cta-section {
+    margin: 50px auto 0 auto;
+    max-width: 900px;
+    /* background: linear-gradient(90deg, #bde5b1 0%, #eafae3 100%); */
+    background:rgba(0, 128, 0, 0.527);
+    border-radius: 18px;
+    padding: 36px 28px;
     display: flex;
-    padding: 40px;
-    gap: 190px;
-}
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 18px rgba(32,93,54,0.09);
+    gap: 18px;
+  }
+  .cta-text {
+    flex: 2;
+    color: #16371a;
+  }
+  .cta-text h2 {
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+  .cta-text p {
+    font-size: 1.06rem;
+    margin-bottom: 0;
+  }
+  .cta-btn {
+    background:rgba(0, 128, 0, 0.527);
+    color: #fff;
+    border: none;
+    padding: 13px 40px;
+    border-radius: 28px;
+    font-size: 1.09rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+    margin-left: 24px;
+  }
+  .custom-footer{
+    background:rgba(0, 128, 0, 0.527);
+  }
+  .cta-btn:hover {
+    background: #16371a;
+    color: #ffd449;
+  }
 
-.feature-one{
-    background-color: beige;
-    padding: 15px;
-    width: 19vw;
-    height: 23vh;
-    justify-items: center;
-    border-radius: 10px;
-}
 
-.feature-one:hover{
-    background-color: rgba(255, 166, 0, 0.554);
-}
-
-
-.social-icons{
-    background-color: beige;
-    padding: 15px;
-    width: 19vw;
-    height: 23vh;
-    justify-items: center;
-    border-radius: 10px;
-}
-
-.social-icons img{
-    width: 5vw;
-    background-color: rgba(255, 166, 0, 0.554);
-    border-radius: 3px;
-    padding: 2px;
-
-}
-
-#the-footer{
-    background-color: rgba(255, 166, 0, 0.554);
-    padding: 15px;
-    justify-items: center;
-}
-
-}
+  
+  footer {
+    background: #205d36;
+    color: #fff;
+    padding: 26px 0 0 0;
+    margin-top: 36px;
+    font-size: 1rem;
+    border-top: 5px solid #ffd449;
+  }
+  .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-weight: bold;
+    font-size: 1.29rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+  }
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    filter: grayscale(0.1);
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.97rem;
+    color: #ffd449;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+  
+  
+  @media (max-width: 900px) {
+    .impact-stats {
+      gap: 18px;
+    }
+    .stories {
+      gap: 12px;
+    }
+    .story {
+      width: 46vw;
+      min-width: 170px;
+      max-width: 240px;
+    }
+    .footer-info {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 900px) {
+    .steps-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .steps-section {
+      padding: 18px 4vw 18px 4vw;
+    }
+    .cta-section {
+      flex-direction: column;
+      gap: 12px;
+      padding: 24px 2vw;
+    }
+    .cta-btn {
+      margin-left: 0;
+      margin-top: 12px;
+    }
+  }
