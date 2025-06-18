@@ -1,0 +1,378 @@
+body {
+    font-family: poppins;
+    margin: 0;
+    background: #f6fbf7;
+    color: #16371a;
+  }
+  
+  .navbar {
+    background: #fff;
+    padding: 18px 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(32,93,54,0.09);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.38rem;
+    font-weight: 700;
+    color: #22a643;
+  }
+  .logo img {
+    height: 60px;
+    margin-right: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links a {
+    color: #16371a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .nav-links a.active,
+  .nav-links a:hover {
+    background: #22a643;
+    color: #fff;
+  }
+  
+  .about-hero {
+    background: linear-gradient(120deg, #eafae3 60%, #bde5b1 100%);
+    background-image: url('images/tea.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0 28px 0;
+    text-align: left;
+    padding-left: 7vw;
+    height: 300px;
+  }
+  .about-hero h1 {
+    font-size: 2.6rem;
+    color: #205d36;
+    font-weight: 900;
+    margin: 0;
+    text-shadow: 0 1px 8px rgba(32,93,54,0.08);
+    margin-top: 98px;
+  }
+  
+  .about-mission {
+    background: #fff;
+    border-radius: 22px;
+    margin: -42px auto 0 auto;
+    max-width: 1100px;
+    box-shadow: 0 6px 32px rgba(63,164,80,0.09);
+    padding: 40px 36px 34px 36px;
+    position: relative;
+    
+    z-index: 10;
+    img{
+        height: 160px;
+        width: 160px;
+    }
+  }
+  .about-mission-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .about-mission-stats {
+    background: #e6fdd2;
+    border-radius: 16px;
+    padding: 26px 18px;
+    text-align: center;
+    min-width: 110px;
+    margin-right: 18px;
+  }
+  .stat-number {
+    font-size: 2.1rem;
+    color: #22a643;
+    font-weight: bold;
+  }
+  .stat-label {
+    font-size: 1rem;
+    color: #205d36;
+    margin-top: 2px;
+  }
+  .mission-main {
+    flex: 1;
+  }
+  .mission-main h2 {
+    color: #205d36;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+  .mission-main p {
+    font-size: 1.07rem;
+    color: #205d36;
+  }
+  .mission-list {
+    margin: 14px 0 14px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .mission-list li {
+    font-size: 1.03rem;
+    color: #22a643;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .mission-author {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 13px;
+  }
+  .author-img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #bde5b1;
+    background: #eafae3;
+  }
+  .author-name {
+    font-weight: 700;
+    color: #205d36;
+  }
+  .author-role {
+    font-size: 0.93rem;
+    color: #16371a;
+  }
+  .about-mission-img {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .about-mission-img img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(32,93,54,0.09);
+  }
+  
+  .about-faq {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 34px;
+    background: #eafae3;
+    padding: 52px 0 38px 0;
+    margin-top: 38px;
+  }
+  .faq-img-wrap {
+    min-width: 280px;
+    max-width: 380px;
+    height: 390px;
+  }
+  .faq-img-wrap img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 18px rgba(32,93,54,0.13);
+  }
+  .faq-box {
+    background: #fff;
+    border-radius: 17px;
+    box-shadow: 0 2px 16px rgba(32,93,54,0.08);
+    padding: 28px 30px;
+    max-width: 340px;
+  }
+  .faq-box h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #205d36;
+    font-weight: 900;
+    font-size: 1.26rem;
+  }
+  .faq-box ul {
+    list-style: disc inside;
+    margin-bottom: 18px;
+    color: #205d36;
+    font-size: 1.02rem;
+    padding-left: 0;
+  }
+  .faq-btn {
+    background: #22a643;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 28px;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+    display: inline-block;
+  }
+  .faq-btn:hover {
+    background: #205d36;
+  }
+  
+  .about-steps {
+    background: #fff;
+    border-radius: 22px;
+    margin: 38px auto 0 auto;
+    max-width: 1100px;
+    box-shadow: 0 6px 32px rgba(63,164,80,0.06);
+    padding: 40px 36px 34px 36px;
+    position: relative;
+    z-index: 10;
+  }
+  .about-steps h2 {
+    text-align: center;
+    color: #205d36;
+    font-size: 1.45rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+  }
+  .steps-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+  }
+  .step {
+    background: #f8f7f2;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,152,95,0.06);
+    padding: 16px 18px;
+    text-align: center;
+    min-width: 170px;
+    max-width: 220px;
+    flex: 1 1 180px;
+  }
+  .step img {
+    width: 100%;
+    max-width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  .step-title {
+    font-weight: 900;
+    color: #22a643;
+    font-size: 1.08rem;
+    margin-bottom: 6px;
+  }
+  .step-desc {
+    font-size: 0.98rem;
+    color: #205d36;
+  }
+  
+  footer {
+    background: #16371a;
+    color: #fff;
+    padding: 36px 0 0 0;
+    margin-top: 50px;
+    font-size: 1rem;
+    border-top: 5px solid #22a643;
+  }
+  .footer-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px 16px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .footer-main h4 {
+    margin-bottom: 6px;
+    color: #ffd449;
+    font-size: 1.08rem;
+  }
+  .footer-contact,
+  .footer-address,
+  .footer-subscribe {
+    min-width: 180px;
+    margin-bottom: 18px;
+  }
+  .footer-subscribe form {
+    display: flex;
+    gap: 7px;
+  }
+  .footer-subscribe input[type="email"] {
+    padding: 7px 12px;
+    border-radius: 14px;
+    border: none;
+    font-size: 1rem;
+  }
+  .footer-subscribe button {
+    background: #ffd449;
+    color: #16371a;
+    border: none;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+  }
+  .footer-subscribe button:hover {
+    background: #22a643;
+    color: #fff;
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.97rem;
+    color: #ffd449;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    background: transparent;
+    padding: 8px 0 0 0;
+  }
+  
+  @media (max-width: 900px) {
+    .about-mission-content, .about-faq, .steps-list, .footer-main {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .about-hero {
+      padding-left: 3vw;
+    }
+    .about-mission-img, .about-mission-stats, .faq-img-wrap {
+      margin: 0 auto;
+    }
+    .about-mission, .about-steps {
+      padding: 22px 7vw 22px 7vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      padding: 12px 4vw;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .about-hero {
+      padding: 28px 0 12px 4vw;
+    }
+    .about-hero h1 {
+      font-size: 1.5rem;
+    }
+    .about-mission, .about-steps {
+      padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+      border-radius: 10px;
+    }
+    .about-faq {
+      padding: 15px 0 15px 0;
+    }
+    .footer-main {
+      gap: 22px;
+      padding: 0 4px 12px 4px;
+    }
+  }

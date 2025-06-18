@@ -1,0 +1,189 @@
+body{
+    background-color: rgb(230, 250, 199);
+    margin: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 2%;
+}
+
+#top-navigation{
+    display: flex;
+    gap:70px;
+    background-color: rgba(29, 79, 29, 0.274);
+    padding: 5px;
+    justify-content: center;
+}
+
+#logo-name{
+    display: flex;
+    gap: 2px;
+}
+
+#logo-name img{
+    width: 5vw;
+    border-radius:19px;
+}
+
+#navigation-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 5px;
+}
+
+#navigation-content a{
+    color: rgb(47, 45, 42);
+    font-weight: 800;
+    padding: 5px;
+}
+
+#navigation-content a:hover{
+    background-color: rgba(255, 166, 0, 0.554);
+    color: rgba(6, 96, 6, 0.274);
+    border-radius: 29px;
+}
+
+.working-features{
+    background-color: rgba(175, 217, 175, 0.708);
+    justify-items: center;
+    padding: 20px;
+}
+
+#first-features{
+    display: flex;
+    padding: 40px;
+    gap: 190px;
+}
+
+.feature-one{
+    background-color: beige;
+    padding: 15px;
+    width: 19vw;
+    height: 23vh;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.feature-one:hover{
+    background-color: rgba(255, 166, 0, 0.554);
+}
+
+
+.social-icons{
+    background-color: beige;
+    padding: 15px;
+    width: 19vw;
+    height: 23vh;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.social-icons img{
+    width: 5vw;
+    background-color: rgba(255, 166, 0, 0.554);
+    border-radius: 3px;
+    padding: 2px;
+
+}
+
+#the-footer{
+    background-color: rgba(255, 166, 0, 0.554);
+    padding: 15px;
+    justify-items: center;
+}
+
+
+@media (min-width: 768px){
+    body{
+    background-color: rgb(230, 250, 199);
+    margin: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 2%;
+}
+
+#top-navigation{
+    display: flex;
+    gap:20px;
+    background-color: rgba(29, 79, 29, 0.274);
+    padding: 5px;
+    justify-content: center;
+}
+
+#logo-name{
+    display: flex;
+    gap: 2px;
+}
+
+#logo-name img{
+    width: 5vw;
+    border-radius:19px;
+}
+
+#navigation-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 5px;
+}
+
+#navigation-content a{
+    color: rgb(47, 45, 42);
+    font-weight: 800;
+    padding: 5px;
+}
+
+#navigation-content a:hover{
+    background-color: rgba(255, 166, 0, 0.554);
+    color: rgba(6, 96, 6, 0.274);
+    border-radius: 29px;
+}
+
+.working-features{
+    background-color: rgba(175, 217, 175, 0.708);
+    justify-items: center;
+    padding: 20px;
+}
+
+#first-features{
+    display: flex;
+    padding: 40px;
+    gap: 190px;
+}
+
+.feature-one{
+    background-color: beige;
+    padding: 15px;
+    width: 19vw;
+    height: 23vh;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.feature-one:hover{
+    background-color: rgba(255, 166, 0, 0.554);
+}
+
+
+.social-icons{
+    background-color: beige;
+    padding: 15px;
+    width: 19vw;
+    height: 23vh;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.social-icons img{
+    width: 5vw;
+    background-color: rgba(255, 166, 0, 0.554);
+    border-radius: 3px;
+    padding: 2px;
+
+}
+
+#the-footer{
+    background-color: rgba(255, 166, 0, 0.554);
+    padding: 15px;
+    justify-items: center;
+}
+
+}
