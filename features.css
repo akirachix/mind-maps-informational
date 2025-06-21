@@ -465,7 +465,7 @@ footer {
 
 @media (min-width: 901px) {
   .hamburger {
-    display: none !important;
+    display: none;
   }
   .navbar {
     justify-content: flex-end;
@@ -475,7 +475,7 @@ footer {
     box-sizing: border-box;
   }
   .nav-links {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     position: static;
     background: none;
